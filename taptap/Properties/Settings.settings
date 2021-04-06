@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="taptap.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Hotkey1" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">Z</Value>
+    </Setting>
+    <Setting Name="Hotkey2" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">X</Value>
+    </Setting>
+    <Setting Name="Hotkey3" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">Oemcomma</Value>
+    </Setting>
+    <Setting Name="Hotkey4" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">OemPeriod</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,15 @@
+I:\codestuff\taptap\taptap\taptap\bin\Release\taptap.exe.config
+I:\codestuff\taptap\taptap\taptap\bin\Release\taptap.exe.manifest
+I:\codestuff\taptap\taptap\taptap\bin\Release\taptap.application
+I:\codestuff\taptap\taptap\taptap\bin\Release\taptap.exe
+I:\codestuff\taptap\taptap\taptap\bin\Release\taptap.pdb
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.csprojAssemblyReference.cache
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.MainForm.resources
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.Properties.Resources.resources
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.csproj.GenerateResource.cache
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.csproj.CoreCompileInputs.cache
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.exe.manifest
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.application
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.exe
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.pdb
+I:\codestuff\taptap\taptap\taptap\obj\Release\taptap.SettingsForm.resources
