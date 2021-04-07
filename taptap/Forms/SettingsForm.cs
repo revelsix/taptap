@@ -65,10 +65,10 @@ namespace taptap
 
         private int desiredStartLocationX;
         private int desiredStartLocationY;
-        private bool WaitingForKeypress = false;
+        private bool waitingForKeypress = false;
         private int whichHotkey = 0;
         public List<Keys> Hotkeys;
-        public SettingsForm(int x, int y, List<Keys>hotkeys)
+        public SettingsForm(int x, int y, List<Keys> hotkeys)
         {
             InitializeComponent();
             desiredStartLocationX = x;
@@ -85,15 +85,14 @@ namespace taptap
         private void keybindButton_Click(object sender, EventArgs e) => StartEditingHotkeys();
         private void StartEditingHotkeys()
         {
-            if (WaitingForKeypress) return;
-            WaitingForKeypress = true;
+            if (waitingForKeypress) return;
+            waitingForKeypress = true;
             DisableButtons();
-            
         }
 
         private void StopEditingHotkeys()
         {
-            WaitingForKeypress = false;
+            waitingForKeypress = false;
             whichHotkey = 0;
             EnableButtons();
             UpdateLabels();
@@ -125,14 +124,13 @@ namespace taptap
         {
             if (e.KeyCode == Keys.Escape)
             {
-                if (WaitingForKeypress) { 
+                if (waitingForKeypress) { 
                     StopEditingHotkeys();
                 }
                 else Close();
             }
             
-
-            if (WaitingForKeypress)
+            if (waitingForKeypress)
             {
                 if (AcceptedKeysToString.Keys.Contains(e.KeyCode))
                 {

@@ -14,10 +14,9 @@ namespace taptap
 {
     public partial class MainForm : Form
     {
-
         globalKeyboardHook gkh = new globalKeyboardHook();
 
-        private int[] KeyClicks = new int [4];
+        private int[] keyClicks = new int [4];
 
         private bool[] isRepeat = new bool[4];
 
@@ -25,14 +24,13 @@ namespace taptap
 
         private List<Keys> Hotkeys;
 
-
         public MainForm()
         {
             InitializeComponent();
-            key1Label.Text = KeyClicks[0].ToString();
-            key2Label.Text = KeyClicks[1].ToString();
-            key3Label.Text = KeyClicks[2].ToString();
-            key4Label.Text = KeyClicks[3].ToString();
+            key1Label.Text = keyClicks[0].ToString();
+            key2Label.Text = keyClicks[1].ToString();
+            key3Label.Text = keyClicks[2].ToString();
+            key4Label.Text = keyClicks[3].ToString();
 
             Hotkeys = new List<Keys>();
             Hotkeys.Add(Properties.Settings.Default.Hotkey1);
@@ -40,9 +38,7 @@ namespace taptap
             Hotkeys.Add(Properties.Settings.Default.Hotkey3);
             Hotkeys.Add(Properties.Settings.Default.Hotkey4);
 
-            
             ApplyHotkeys();
-            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -65,14 +61,14 @@ namespace taptap
 
         private void reset_Click(object sender, EventArgs e)
         {
-            KeyClicks[0] = 0;
-            KeyClicks[1] = 0;
-            KeyClicks[2] = 0;
-            KeyClicks[3] = 0;
-            key1Label.Text = KeyClicks[0].ToString();
-            key2Label.Text = KeyClicks[1].ToString();
-            key3Label.Text = KeyClicks[2].ToString();
-            key4Label.Text = KeyClicks[3].ToString();
+            keyClicks[0] = 0;
+            keyClicks[1] = 0;
+            keyClicks[2] = 0;
+            keyClicks[3] = 0;
+            key1Label.Text = keyClicks[0].ToString();
+            key2Label.Text = keyClicks[1].ToString();
+            key3Label.Text = keyClicks[2].ToString();
+            key4Label.Text = keyClicks[3].ToString();
         }
 
         void gkh_KeyUp(object sender, KeyEventArgs e)
@@ -103,7 +99,6 @@ namespace taptap
 
             UpdateImage();
             Console.Out.WriteLine(imgValue);
-
         }
 
         void gkh_KeyDown(object sender, KeyEventArgs e)
@@ -113,8 +108,8 @@ namespace taptap
             {
                 if (!isRepeat[0])
                 {
-                    KeyClicks[0]++;
-                    key1Label.Text = KeyClicks[0].ToString();
+                    keyClicks[0]++;
+                    key1Label.Text = keyClicks[0].ToString();
                     imgValue += 1;
                 }
                 isRepeat[0] = true;
@@ -123,8 +118,8 @@ namespace taptap
             {
                 if (!isRepeat[1])
                 {
-                    KeyClicks[1]++;
-                    key2Label.Text = KeyClicks[1].ToString();
+                    keyClicks[1]++;
+                    key2Label.Text = keyClicks[1].ToString();
                     imgValue += 1;
                 }
                 isRepeat[1] = true;
@@ -133,8 +128,8 @@ namespace taptap
             {
                 if (!isRepeat[2])
                 {
-                    KeyClicks[2]++;
-                    key3Label.Text = KeyClicks[2].ToString();
+                    keyClicks[2]++;
+                    key3Label.Text = keyClicks[2].ToString();
                     imgValue += 3;
                 }
                 isRepeat[2] = true;
@@ -143,8 +138,8 @@ namespace taptap
             {
                 if (!isRepeat[3])
                 {
-                    KeyClicks[3]++;
-                    key4Label.Text = KeyClicks[3].ToString();
+                    keyClicks[3]++;
+                    key4Label.Text = keyClicks[3].ToString();
                     imgValue += 3;
                 }
                 isRepeat[3] = true;
